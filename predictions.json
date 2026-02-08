@@ -1,0 +1,1220 @@
+{
+  "generated_at": "2026-02-08T14:35:44.931916",
+  "predictions": {
+    "hard/original_00__contrast__compress__q55__v5.jpg": {
+      "file": "hard/original_00__contrast__compress__q55__v5.jpg",
+      "category": "hard",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (877 RANSAC inliers)."
+    },
+    "hard/original_00__crop_keep60__resized__q45__v6.jpg": {
+      "file": "hard/original_00__crop_keep60__resized__q45__v6.jpg",
+      "category": "hard",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (162 RANSAC inliers)."
+    },
+    "hard/original_00__crop_keep70__bright__compress__q40__v2.jpg": {
+      "file": "hard/original_00__crop_keep70__bright__compress__q40__v2.jpg",
+      "category": "hard",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (487 RANSAC inliers)."
+    },
+    "hard/original_00__crop_offcenter_keep75__compress__q35__v1.jpg": {
+      "file": "hard/original_00__crop_offcenter_keep75__compress__q35__v1.jpg",
+      "category": "hard",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (365 RANSAC inliers)."
+    },
+    "hard/original_00__resize_scale114__compress__q45__v3.jpg": {
+      "file": "hard/original_00__resize_scale114__compress__q45__v3.jpg",
+      "category": "hard",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (523 RANSAC inliers)."
+    },
+    "hard/original_00__rotate6deg__compress__q35__v4.jpg": {
+      "file": "hard/original_00__rotate6deg__compress__q35__v4.jpg",
+      "category": "hard",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (694 RANSAC inliers)."
+    },
+    "hard/original_01__contrast__compress__q70__v5.jpg": {
+      "file": "hard/original_01__contrast__compress__q70__v5.jpg",
+      "category": "hard",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (892 RANSAC inliers)."
+    },
+    "hard/original_01__crop_keep50__resized__q75__v6.jpg": {
+      "file": "hard/original_01__crop_keep50__resized__q75__v6.jpg",
+      "category": "hard",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (259 RANSAC inliers)."
+    },
+    "hard/original_01__crop_keep70__bright__compress__q40__v2.jpg": {
+      "file": "hard/original_01__crop_keep70__bright__compress__q40__v2.jpg",
+      "category": "hard",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (472 RANSAC inliers)."
+    },
+    "hard/original_01__crop_offcenter_keep65__compress__q35__v1.jpg": {
+      "file": "hard/original_01__crop_offcenter_keep65__compress__q35__v1.jpg",
+      "category": "hard",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (577 RANSAC inliers)."
+    },
+    "hard/original_01__resize_scale75__compress__q30__v3.jpg": {
+      "file": "hard/original_01__resize_scale75__compress__q30__v3.jpg",
+      "category": "hard",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (345 RANSAC inliers)."
+    },
+    "hard/original_01__rotate3deg__compress__q65__v4.jpg": {
+      "file": "hard/original_01__rotate3deg__compress__q65__v4.jpg",
+      "category": "hard",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (674 RANSAC inliers)."
+    },
+    "hard/original_02__contrast__compress__q35__v5.jpg": {
+      "file": "hard/original_02__contrast__compress__q35__v5.jpg",
+      "category": "hard",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (746 RANSAC inliers)."
+    },
+    "hard/original_02__crop_keep60__resized__q60__v6.jpg": {
+      "file": "hard/original_02__crop_keep60__resized__q60__v6.jpg",
+      "category": "hard",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (148 RANSAC inliers)."
+    },
+    "hard/original_02__crop_keep70__bright__compress__q40__v2.jpg": {
+      "file": "hard/original_02__crop_keep70__bright__compress__q40__v2.jpg",
+      "category": "hard",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (205 RANSAC inliers)."
+    },
+    "hard/original_02__crop_offcenter_keep55__compress__q45__v1.jpg": {
+      "file": "hard/original_02__crop_offcenter_keep55__compress__q45__v1.jpg",
+      "category": "hard",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (198 RANSAC inliers)."
+    },
+    "hard/original_02__resize_scale85__compress__q30__v3.jpg": {
+      "file": "hard/original_02__resize_scale85__compress__q30__v3.jpg",
+      "category": "hard",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (310 RANSAC inliers)."
+    },
+    "hard/original_02__rotate3deg__compress__q35__v4.jpg": {
+      "file": "hard/original_02__rotate3deg__compress__q35__v4.jpg",
+      "category": "hard",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (370 RANSAC inliers)."
+    },
+    "hard/original_03__contrast__compress__q70__v5.jpg": {
+      "file": "hard/original_03__contrast__compress__q70__v5.jpg",
+      "category": "hard",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (913 RANSAC inliers)."
+    },
+    "hard/original_03__crop_keep60__bright__compress__q40__v2.jpg": {
+      "file": "hard/original_03__crop_keep60__bright__compress__q40__v2.jpg",
+      "category": "hard",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (225 RANSAC inliers)."
+    },
+    "hard/original_03__crop_keep60__resized__q60__v6.jpg": {
+      "file": "hard/original_03__crop_keep60__resized__q60__v6.jpg",
+      "category": "hard",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (446 RANSAC inliers)."
+    },
+    "hard/original_03__crop_offcenter_keep65__compress__q35__v1.jpg": {
+      "file": "hard/original_03__crop_offcenter_keep65__compress__q35__v1.jpg",
+      "category": "hard",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (657 RANSAC inliers)."
+    },
+    "hard/original_03__resize_scale75__compress__q45__v3.jpg": {
+      "file": "hard/original_03__resize_scale75__compress__q45__v3.jpg",
+      "category": "hard",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (417 RANSAC inliers)."
+    },
+    "hard/original_03__rotate-6deg__compress__q50__v4.jpg": {
+      "file": "hard/original_03__rotate-6deg__compress__q50__v4.jpg",
+      "category": "hard",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (719 RANSAC inliers)."
+    },
+    "hard/original_04__contrast__compress__q70__v5.jpg": {
+      "file": "hard/original_04__contrast__compress__q70__v5.jpg",
+      "category": "hard",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (909 RANSAC inliers)."
+    },
+    "hard/original_04__crop_keep50__resized__q45__v6.jpg": {
+      "file": "hard/original_04__crop_keep50__resized__q45__v6.jpg",
+      "category": "hard",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (82 RANSAC inliers)."
+    },
+    "hard/original_04__crop_keep60__bright__compress__q65__v2.jpg": {
+      "file": "hard/original_04__crop_keep60__bright__compress__q65__v2.jpg",
+      "category": "hard",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (410 RANSAC inliers)."
+    },
+    "hard/original_04__crop_offcenter_keep75__compress__q35__v1.jpg": {
+      "file": "hard/original_04__crop_offcenter_keep75__compress__q35__v1.jpg",
+      "category": "hard",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (507 RANSAC inliers)."
+    },
+    "hard/original_04__resize_scale85__compress__q60__v3.jpg": {
+      "file": "hard/original_04__resize_scale85__compress__q60__v3.jpg",
+      "category": "hard",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (431 RANSAC inliers)."
+    },
+    "hard/original_04__rotate-4deg__compress__q50__v4.jpg": {
+      "file": "hard/original_04__rotate-4deg__compress__q50__v4.jpg",
+      "category": "hard",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (606 RANSAC inliers)."
+    },
+    "hard/original_05__contrast__compress__q35__v5.jpg": {
+      "file": "hard/original_05__contrast__compress__q35__v5.jpg",
+      "category": "hard",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (756 RANSAC inliers)."
+    },
+    "hard/original_05__crop_keep50__resized__q60__v6.jpg": {
+      "file": "hard/original_05__crop_keep50__resized__q60__v6.jpg",
+      "category": "hard",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (290 RANSAC inliers)."
+    },
+    "hard/original_05__crop_keep70__bright__compress__q65__v2.jpg": {
+      "file": "hard/original_05__crop_keep70__bright__compress__q65__v2.jpg",
+      "category": "hard",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (716 RANSAC inliers)."
+    },
+    "hard/original_05__crop_offcenter_keep75__compress__q25__v1.jpg": {
+      "file": "hard/original_05__crop_offcenter_keep75__compress__q25__v1.jpg",
+      "category": "hard",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (642 RANSAC inliers)."
+    },
+    "hard/original_05__resize_scale114__compress__q60__v3.jpg": {
+      "file": "hard/original_05__resize_scale114__compress__q60__v3.jpg",
+      "category": "hard",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (562 RANSAC inliers)."
+    },
+    "hard/original_05__rotate-3deg__compress__q65__v4.jpg": {
+      "file": "hard/original_05__rotate-3deg__compress__q65__v4.jpg",
+      "category": "hard",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (737 RANSAC inliers)."
+    },
+    "hard/original_06__contrast__compress__q35__v5.jpg": {
+      "file": "hard/original_06__contrast__compress__q35__v5.jpg",
+      "category": "hard",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (845 RANSAC inliers)."
+    },
+    "hard/original_06__crop_keep50__resized__q45__v6.jpg": {
+      "file": "hard/original_06__crop_keep50__resized__q45__v6.jpg",
+      "category": "hard",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (335 RANSAC inliers)."
+    },
+    "hard/original_06__crop_keep70__bright__compress__q55__v2.jpg": {
+      "file": "hard/original_06__crop_keep70__bright__compress__q55__v2.jpg",
+      "category": "hard",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (583 RANSAC inliers)."
+    },
+    "hard/original_06__crop_offcenter_keep75__compress__q25__v1.jpg": {
+      "file": "hard/original_06__crop_offcenter_keep75__compress__q25__v1.jpg",
+      "category": "hard",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (611 RANSAC inliers)."
+    },
+    "hard/original_06__resize_scale85__compress__q45__v3.jpg": {
+      "file": "hard/original_06__resize_scale85__compress__q45__v3.jpg",
+      "category": "hard",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (672 RANSAC inliers)."
+    },
+    "hard/original_06__rotate-6deg__compress__q35__v4.jpg": {
+      "file": "hard/original_06__rotate-6deg__compress__q35__v4.jpg",
+      "category": "hard",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (606 RANSAC inliers)."
+    },
+    "hard/original_07__contrast__compress__q70__v5.jpg": {
+      "file": "hard/original_07__contrast__compress__q70__v5.jpg",
+      "category": "hard",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (927 RANSAC inliers)."
+    },
+    "hard/original_07__crop_keep60__bright__compress__q55__v2.jpg": {
+      "file": "hard/original_07__crop_keep60__bright__compress__q55__v2.jpg",
+      "category": "hard",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (659 RANSAC inliers)."
+    },
+    "hard/original_07__crop_keep60__resized__q60__v6.jpg": {
+      "file": "hard/original_07__crop_keep60__resized__q60__v6.jpg",
+      "category": "hard",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (374 RANSAC inliers)."
+    },
+    "hard/original_07__crop_offcenter_keep55__compress__q35__v1.jpg": {
+      "file": "hard/original_07__crop_offcenter_keep55__compress__q35__v1.jpg",
+      "category": "hard",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (363 RANSAC inliers)."
+    },
+    "hard/original_07__resize_scale114__compress__q45__v3.jpg": {
+      "file": "hard/original_07__resize_scale114__compress__q45__v3.jpg",
+      "category": "hard",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (589 RANSAC inliers)."
+    },
+    "hard/original_07__rotate-3deg__compress__q65__v4.jpg": {
+      "file": "hard/original_07__rotate-3deg__compress__q65__v4.jpg",
+      "category": "hard",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (712 RANSAC inliers)."
+    },
+    "hard/original_08__contrast__compress__q35__v5.jpg": {
+      "file": "hard/original_08__contrast__compress__q35__v5.jpg",
+      "category": "hard",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (806 RANSAC inliers)."
+    },
+    "hard/original_08__crop_keep60__bright__compress__q55__v2.jpg": {
+      "file": "hard/original_08__crop_keep60__bright__compress__q55__v2.jpg",
+      "category": "hard",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (421 RANSAC inliers)."
+    },
+    "hard/original_08__crop_keep60__resized__q45__v6.jpg": {
+      "file": "hard/original_08__crop_keep60__resized__q45__v6.jpg",
+      "category": "hard",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (251 RANSAC inliers)."
+    },
+    "hard/original_08__crop_offcenter_keep65__compress__q35__v1.jpg": {
+      "file": "hard/original_08__crop_offcenter_keep65__compress__q35__v1.jpg",
+      "category": "hard",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (510 RANSAC inliers)."
+    },
+    "hard/original_08__resize_scale114__compress__q30__v3.jpg": {
+      "file": "hard/original_08__resize_scale114__compress__q30__v3.jpg",
+      "category": "hard",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (642 RANSAC inliers)."
+    },
+    "hard/original_08__rotate3deg__compress__q50__v4.jpg": {
+      "file": "hard/original_08__rotate3deg__compress__q50__v4.jpg",
+      "category": "hard",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (716 RANSAC inliers)."
+    },
+    "hard/original_09__contrast__compress__q35__v5.jpg": {
+      "file": "hard/original_09__contrast__compress__q35__v5.jpg",
+      "category": "hard",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (520 RANSAC inliers)."
+    },
+    "hard/original_09__crop_keep50__resized__q75__v6.jpg": {
+      "file": "hard/original_09__crop_keep50__resized__q75__v6.jpg",
+      "category": "hard",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (24 RANSAC inliers)."
+    },
+    "hard/original_09__crop_keep60__bright__compress__q40__v2.jpg": {
+      "file": "hard/original_09__crop_keep60__bright__compress__q40__v2.jpg",
+      "category": "hard",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (47 RANSAC inliers)."
+    },
+    "hard/original_09__crop_offcenter_keep55__compress__q25__v1.jpg": {
+      "file": "hard/original_09__crop_offcenter_keep55__compress__q25__v1.jpg",
+      "category": "hard",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (72 RANSAC inliers)."
+    },
+    "hard/original_09__resize_scale75__compress__q30__v3.jpg": {
+      "file": "hard/original_09__resize_scale75__compress__q30__v3.jpg",
+      "category": "hard",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (267 RANSAC inliers)."
+    },
+    "hard/original_09__rotate-3deg__compress__q65__v4.jpg": {
+      "file": "hard/original_09__rotate-3deg__compress__q65__v4.jpg",
+      "category": "hard",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (548 RANSAC inliers)."
+    },
+    "modified_images/modified_00_bright_enhanced.jpg": {
+      "file": "modified_images/modified_00_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (598 RANSAC inliers)."
+    },
+    "modified_images/modified_00_compressed.jpg": {
+      "file": "modified_images/modified_00_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (858 RANSAC inliers)."
+    },
+    "modified_images/modified_00_crop_25pct.jpg": {
+      "file": "modified_images/modified_00_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_00",
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": false,
+      "reason": "NO MATCH: Max geometric inliers: 13, Max color correlation: 0.27"
+    },
+    "modified_images/modified_00_crop_50pct.jpg": {
+      "file": "modified_images/modified_00_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (146 RANSAC inliers)."
+    },
+    "modified_images/modified_00_crop_75pct.jpg": {
+      "file": "modified_images/modified_00_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (440 RANSAC inliers)."
+    },
+    "modified_images/modified_00_format_png.png": {
+      "file": "modified_images/modified_00_format_png.png",
+      "category": "modified_images",
+      "expected": "original_00",
+      "raw_predicted": "original_00.jpg",
+      "predicted": "original_00",
+      "correct": true,
+      "reason": "MATCH FOUND: original_00.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_01_bright_enhanced.jpg": {
+      "file": "modified_images/modified_01_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (737 RANSAC inliers)."
+    },
+    "modified_images/modified_01_compressed.jpg": {
+      "file": "modified_images/modified_01_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (772 RANSAC inliers)."
+    },
+    "modified_images/modified_01_crop_25pct.jpg": {
+      "file": "modified_images/modified_01_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (255 RANSAC inliers)."
+    },
+    "modified_images/modified_01_crop_50pct.jpg": {
+      "file": "modified_images/modified_01_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (414 RANSAC inliers)."
+    },
+    "modified_images/modified_01_crop_75pct.jpg": {
+      "file": "modified_images/modified_01_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (620 RANSAC inliers)."
+    },
+    "modified_images/modified_01_format_png.png": {
+      "file": "modified_images/modified_01_format_png.png",
+      "category": "modified_images",
+      "expected": "original_01",
+      "raw_predicted": "original_01.jpg",
+      "predicted": "original_01",
+      "correct": true,
+      "reason": "MATCH FOUND: original_01.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_02_bright_enhanced.jpg": {
+      "file": "modified_images/modified_02_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (483 RANSAC inliers)."
+    },
+    "modified_images/modified_02_compressed.jpg": {
+      "file": "modified_images/modified_02_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (757 RANSAC inliers)."
+    },
+    "modified_images/modified_02_crop_25pct.jpg": {
+      "file": "modified_images/modified_02_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (25 RANSAC inliers)."
+    },
+    "modified_images/modified_02_crop_50pct.jpg": {
+      "file": "modified_images/modified_02_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (338 RANSAC inliers)."
+    },
+    "modified_images/modified_02_crop_75pct.jpg": {
+      "file": "modified_images/modified_02_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (399 RANSAC inliers)."
+    },
+    "modified_images/modified_02_format_png.png": {
+      "file": "modified_images/modified_02_format_png.png",
+      "category": "modified_images",
+      "expected": "original_02",
+      "raw_predicted": "original_02.jpg",
+      "predicted": "original_02",
+      "correct": true,
+      "reason": "MATCH FOUND: original_02.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_03_bright_enhanced.jpg": {
+      "file": "modified_images/modified_03_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (789 RANSAC inliers)."
+    },
+    "modified_images/modified_03_compressed.jpg": {
+      "file": "modified_images/modified_03_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (841 RANSAC inliers)."
+    },
+    "modified_images/modified_03_crop_25pct.jpg": {
+      "file": "modified_images/modified_03_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_03",
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": false,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: 0.89"
+    },
+    "modified_images/modified_03_crop_50pct.jpg": {
+      "file": "modified_images/modified_03_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (363 RANSAC inliers)."
+    },
+    "modified_images/modified_03_crop_75pct.jpg": {
+      "file": "modified_images/modified_03_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (730 RANSAC inliers)."
+    },
+    "modified_images/modified_03_format_png.png": {
+      "file": "modified_images/modified_03_format_png.png",
+      "category": "modified_images",
+      "expected": "original_03",
+      "raw_predicted": "original_03.jpg",
+      "predicted": "original_03",
+      "correct": true,
+      "reason": "MATCH FOUND: original_03.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_04_bright_enhanced.jpg": {
+      "file": "modified_images/modified_04_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (784 RANSAC inliers)."
+    },
+    "modified_images/modified_04_compressed.jpg": {
+      "file": "modified_images/modified_04_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (769 RANSAC inliers)."
+    },
+    "modified_images/modified_04_crop_25pct.jpg": {
+      "file": "modified_images/modified_04_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (28 RANSAC inliers)."
+    },
+    "modified_images/modified_04_crop_50pct.jpg": {
+      "file": "modified_images/modified_04_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (433 RANSAC inliers)."
+    },
+    "modified_images/modified_04_crop_75pct.jpg": {
+      "file": "modified_images/modified_04_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (615 RANSAC inliers)."
+    },
+    "modified_images/modified_04_format_png.png": {
+      "file": "modified_images/modified_04_format_png.png",
+      "category": "modified_images",
+      "expected": "original_04",
+      "raw_predicted": "original_04.jpg",
+      "predicted": "original_04",
+      "correct": true,
+      "reason": "MATCH FOUND: original_04.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_05_bright_enhanced.jpg": {
+      "file": "modified_images/modified_05_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (716 RANSAC inliers)."
+    },
+    "modified_images/modified_05_compressed.jpg": {
+      "file": "modified_images/modified_05_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (811 RANSAC inliers)."
+    },
+    "modified_images/modified_05_crop_25pct.jpg": {
+      "file": "modified_images/modified_05_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_05",
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": false,
+      "reason": "NO MATCH: Max geometric inliers: 17, Max color correlation: 0.12"
+    },
+    "modified_images/modified_05_crop_50pct.jpg": {
+      "file": "modified_images/modified_05_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (385 RANSAC inliers)."
+    },
+    "modified_images/modified_05_crop_75pct.jpg": {
+      "file": "modified_images/modified_05_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (676 RANSAC inliers)."
+    },
+    "modified_images/modified_05_format_png.png": {
+      "file": "modified_images/modified_05_format_png.png",
+      "category": "modified_images",
+      "expected": "original_05",
+      "raw_predicted": "original_05.jpg",
+      "predicted": "original_05",
+      "correct": true,
+      "reason": "MATCH FOUND: original_05.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_06_bright_enhanced.jpg": {
+      "file": "modified_images/modified_06_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (910 RANSAC inliers)."
+    },
+    "modified_images/modified_06_compressed.jpg": {
+      "file": "modified_images/modified_06_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (801 RANSAC inliers)."
+    },
+    "modified_images/modified_06_crop_25pct.jpg": {
+      "file": "modified_images/modified_06_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (57 RANSAC inliers)."
+    },
+    "modified_images/modified_06_crop_50pct.jpg": {
+      "file": "modified_images/modified_06_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (770 RANSAC inliers)."
+    },
+    "modified_images/modified_06_crop_75pct.jpg": {
+      "file": "modified_images/modified_06_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (714 RANSAC inliers)."
+    },
+    "modified_images/modified_06_format_png.png": {
+      "file": "modified_images/modified_06_format_png.png",
+      "category": "modified_images",
+      "expected": "original_06",
+      "raw_predicted": "original_06.jpg",
+      "predicted": "original_06",
+      "correct": true,
+      "reason": "MATCH FOUND: original_06.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_07_bright_enhanced.jpg": {
+      "file": "modified_images/modified_07_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (672 RANSAC inliers)."
+    },
+    "modified_images/modified_07_compressed.jpg": {
+      "file": "modified_images/modified_07_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (872 RANSAC inliers)."
+    },
+    "modified_images/modified_07_crop_25pct.jpg": {
+      "file": "modified_images/modified_07_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (144 RANSAC inliers)."
+    },
+    "modified_images/modified_07_crop_50pct.jpg": {
+      "file": "modified_images/modified_07_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (699 RANSAC inliers)."
+    },
+    "modified_images/modified_07_crop_75pct.jpg": {
+      "file": "modified_images/modified_07_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (750 RANSAC inliers)."
+    },
+    "modified_images/modified_07_format_png.png": {
+      "file": "modified_images/modified_07_format_png.png",
+      "category": "modified_images",
+      "expected": "original_07",
+      "raw_predicted": "original_07.jpg",
+      "predicted": "original_07",
+      "correct": true,
+      "reason": "MATCH FOUND: original_07.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_08_bright_enhanced.jpg": {
+      "file": "modified_images/modified_08_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (621 RANSAC inliers)."
+    },
+    "modified_images/modified_08_compressed.jpg": {
+      "file": "modified_images/modified_08_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (831 RANSAC inliers)."
+    },
+    "modified_images/modified_08_crop_25pct.jpg": {
+      "file": "modified_images/modified_08_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (91 RANSAC inliers)."
+    },
+    "modified_images/modified_08_crop_50pct.jpg": {
+      "file": "modified_images/modified_08_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (479 RANSAC inliers)."
+    },
+    "modified_images/modified_08_crop_75pct.jpg": {
+      "file": "modified_images/modified_08_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (761 RANSAC inliers)."
+    },
+    "modified_images/modified_08_format_png.png": {
+      "file": "modified_images/modified_08_format_png.png",
+      "category": "modified_images",
+      "expected": "original_08",
+      "raw_predicted": "original_08.jpg",
+      "predicted": "original_08",
+      "correct": true,
+      "reason": "MATCH FOUND: original_08.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "modified_images/modified_09_bright_enhanced.jpg": {
+      "file": "modified_images/modified_09_bright_enhanced.jpg",
+      "category": "modified_images",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (763 RANSAC inliers)."
+    },
+    "modified_images/modified_09_compressed.jpg": {
+      "file": "modified_images/modified_09_compressed.jpg",
+      "category": "modified_images",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (631 RANSAC inliers)."
+    },
+    "modified_images/modified_09_crop_25pct.jpg": {
+      "file": "modified_images/modified_09_crop_25pct.jpg",
+      "category": "modified_images",
+      "expected": "original_09",
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": false,
+      "reason": "NO MATCH: Max geometric inliers: 12, Max color correlation: 0.51"
+    },
+    "modified_images/modified_09_crop_50pct.jpg": {
+      "file": "modified_images/modified_09_crop_50pct.jpg",
+      "category": "modified_images",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (106 RANSAC inliers)."
+    },
+    "modified_images/modified_09_crop_75pct.jpg": {
+      "file": "modified_images/modified_09_crop_75pct.jpg",
+      "category": "modified_images",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (226 RANSAC inliers)."
+    },
+    "modified_images/modified_09_format_png.png": {
+      "file": "modified_images/modified_09_format_png.png",
+      "category": "modified_images",
+      "expected": "original_09",
+      "raw_predicted": "original_09.jpg",
+      "predicted": "original_09",
+      "correct": true,
+      "reason": "MATCH FOUND: original_09.jpg | Reasoning: Strong geometric match (1000 RANSAC inliers)."
+    },
+    "random/random_05.jpg": {
+      "file": "random/random_05.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -0.04"
+    },
+    "random/random_06.jpg": {
+      "file": "random/random_06.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 6, Max color correlation: -0.07"
+    },
+    "random/random_07.jpg": {
+      "file": "random/random_07.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: 0.03"
+    },
+    "random/random_08.jpg": {
+      "file": "random/random_08.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -0.09"
+    },
+    "random/random_09.jpg": {
+      "file": "random/random_09.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -0.04"
+    },
+    "random/random_10.jpg": {
+      "file": "random/random_10.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -0.04"
+    },
+    "random/random_11.jpg": {
+      "file": "random/random_11.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -0.07"
+    },
+    "random/random_12.jpg": {
+      "file": "random/random_12.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: 0.02"
+    },
+    "random/random_13.jpg": {
+      "file": "random/random_13.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -0.13"
+    },
+    "random/random_14.jpg": {
+      "file": "random/random_14.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 10, Max color correlation: -0.04"
+    },
+    "random/random_noise_00.jpg": {
+      "file": "random/random_noise_00.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -1.00"
+    },
+    "random/random_noise_01.jpg": {
+      "file": "random/random_noise_01.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -1.00"
+    },
+    "random/random_noise_02.jpg": {
+      "file": "random/random_noise_02.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -1.00"
+    },
+    "random/random_noise_03.jpg": {
+      "file": "random/random_noise_03.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -1.00"
+    },
+    "random/random_noise_04.jpg": {
+      "file": "random/random_noise_04.jpg",
+      "category": "random",
+      "expected": null,
+      "raw_predicted": "REJECTED",
+      "predicted": null,
+      "correct": true,
+      "reason": "NO MATCH: Max geometric inliers: 0, Max color correlation: -1.00"
+    }
+  }
+}
