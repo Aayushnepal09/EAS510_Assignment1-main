@@ -5,26 +5,21 @@ import glob
 
 class ForensicExpertSystem:
     def __init__(self, originals_path):
-        """
-        Initialize the expert system with the path to original images.
-        """
+       
         self.originals_path = originals_path
-        self.knowledge_base = {} # Stores features of original images
+        self.knowledge_base = {} 
         
-        # Initialize ORB detector (for feature matching)
+        # Initialize ORB detector
         self.orb = cv2.ORB_create(nfeatures=1000)
 
-        # Matcher (create once)
+        # Matcher 
         self.bf = cv2.BFMatcher(cv2.NORM_HAMMING)
         
-        # Load the database immediately
+        # Load the database
         self._build_knowledge_base()
 
     def _build_knowledge_base(self):
-        """
-        Internal rule: Load all original images and pre-calculate their 
-        digital fingerprints (Keypoints, Descriptors, and Histograms).
-        """
+        
         print(f"Loading Knowledge Base from: {self.originals_path}")
         image_files = glob.glob(os.path.join(self.originals_path, "*"))
         
@@ -44,7 +39,7 @@ class ForensicExpertSystem:
             hist = cv2.calcHist([img], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
             cv2.normalize(hist, hist)
 
-            # adding value in baseline 
+            # adding value co compare with unknown image
             self.knowledge_base[filename] = {
                 'keypoints': kp,
                 'descriptors': des,
@@ -55,10 +50,7 @@ class ForensicExpertSystem:
         print(f"Knowledge Base built: {len(self.knowledge_base)} originals registered.\n")
 
     def analyze_image(self, unknown_image_path):
-        """
-        Analyze an unknown image and match it against the knowledge base.
-        Returns: (Best Match Filename, Reasoning String)
-        """
+        
         unknown_img = cv2.imread(unknown_image_path)
         if unknown_img is None:
             return None, "Error: Could not read image"
@@ -79,14 +71,15 @@ class ForensicExpertSystem:
         # Compare against every original in the database
         for original_name, data in self.knowledge_base.items():
             
-            # --- RULE 1: Feature Matching (ORB) ---
-            # FIX: Use ratio test + RANSAC inliers instead of raw match count (prevents false positives)
+            # --- RULE 1: Feature Matching
+
             inliers_count = 0
-            
+        
             des_o = data['descriptors']
             kp_o = data['keypoints']
 
             if des_u is not None and des_o is not None and len(des_u) >= 2 and len(des_o) >= 2:
+                
                 # KNN match
                 knn = self.bf.knnMatch(des_u, des_o, k=2)
 

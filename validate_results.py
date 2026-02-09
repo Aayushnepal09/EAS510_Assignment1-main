@@ -1,26 +1,17 @@
 import os
 import json
 from datetime import datetime
-
-# CHANGE THIS if your matcher file name is not rule_based.py
 from rule_based_expert_system import ForensicExpertSystem
 
 
 def normalize_pred(raw_result):
     """
-    Ground truth uses:
-      - "original_00" (no extension) for real matches
-      - None for random images (means should be rejected)
-
-    Your matcher returns:
-      - "original_00.jpg" for a match
-      - "REJECTED" for no match
+    Comparing results with ground truth 
     """
     if raw_result is None:
         return None
     if raw_result == "REJECTED":
         return None
-    # convert "original_02.jpg" -> "original_02"
     return os.path.splitext(os.path.basename(raw_result))[0]
 
 
@@ -37,19 +28,20 @@ def main():
         print(f"❌ originals folder not found at: {originals_path}")
         return
 
-    # Load ground truth
-    with open(gt_path, "r", encoding="utf-8") as f:
+    # Loading ground truth
+    with open (gt_path, "r") as f:
         ground_truth = json.load(f)
 
     # Init expert system
     expert = ForensicExpertSystem(originals_path)
 
-    # Where to save outputs
+    # saving output fro both result and compae values 
     out_predictions_path = os.path.join(base_dir, "predictions.json")
     out_comparison_path = os.path.join(base_dir, "comparison.json")
 
-    predictions = {}   # file -> {expected, raw_pred, pred, reason, correct}
-    results_list = []  # same data but as list (easier to inspect)
+    predictions = {}  
+    # same values as prediction but as list fro easy comparisiom values are :{expected, raw_pred, pred, reason, correct}
+    results_list = [] 
     summary = {
         "overall": {"total": 0, "correct": 0},
         "by_category": {}
@@ -66,16 +58,17 @@ def main():
 
     # Evaluate every file in ground_truth.json
     for rel_path, expected in ground_truth.items():
-        # category is first folder (hard/ modified_images/ random/)
+
+        # category for folders (hard/modified_images/ random/)
         category = rel_path.split("/")[0] if "/" in rel_path else "unknown"
 
-        # Build OS-safe full path
+        #  OS-safe ful path
         full_path = os.path.join(base_dir, *rel_path.split("/"))
 
         raw_pred, reason = expert.analyze_image(full_path)
         pred = normalize_pred(raw_pred)
 
-        # expected in ground_truth is "original_XX" or None
+        # comparing 
         correct = (pred == expected)
 
         bump(category, correct)
@@ -83,9 +76,9 @@ def main():
         record = {
             "file": rel_path,
             "category": category,
-            "expected": expected,          # e.g. "original_03" or None
-            "raw_predicted": raw_pred,     # e.g. "original_03.jpg" or "REJECTED"
-            "predicted": pred,             # normalized: "original_03" or None
+            "expected": expected,          
+            "raw_predicted": raw_pred,     
+            "predicted": pred,            
             "correct": correct,
             "reason": reason
         }
@@ -93,11 +86,11 @@ def main():
         predictions[rel_path] = record
         results_list.append(record)
 
-        # Console output (✅ correct, ❌ wrong)
+        # for console output
         icon = "✅" if correct else "❌"
         print(f"{icon} {rel_path} -> raw={raw_pred} | expected={expected}")
 
-    # Add final accuracy % in summary
+    # adding overall final results 
     def acc(correct, total):
         return 0.0 if total == 0 else (correct / total) * 100
 
@@ -107,14 +100,14 @@ def main():
     for cat, s in summary["by_category"].items():
         s["accuracy_percent"] = round(acc(s["correct"], s["total"]), 2)
 
-    # Write predictions.json (all outputs)
+    # saving result of values 
     with open(out_predictions_path, "w", encoding="utf-8") as f:
         json.dump({
             "generated_at": datetime.now().isoformat(),
             "predictions": predictions
         }, f, indent=2)
 
-    # Write comparison.json (expected vs predicted + summary)
+    # saving results and compared values 
     with open(out_comparison_path, "w", encoding="utf-8") as f:
         json.dump({
             "generated_at": datetime.now().isoformat(),
@@ -122,6 +115,7 @@ def main():
             "results": results_list
         }, f, indent=2)
 
+    #showing summary in cnsole 
     print("\n--- SUMMARY ---")
     print(f"Overall: {summary['overall']['correct']}/{summary['overall']['total']} "
           f"({summary['overall']['accuracy_percent']}%)")
