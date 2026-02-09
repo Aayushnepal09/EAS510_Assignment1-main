@@ -10,12 +10,12 @@ class ForensicExpertSystem:
         self.knowledge_base = {} 
         
         # Initialize ORB detector
-        self.orb = cv2.ORB_create(nfeatures=1000)
+        self.orb =cv2.ORB_create(nfeatures=4000)
 
-        # Matcher 
+        # matching
         self.bf = cv2.BFMatcher(cv2.NORM_HAMMING)
         
-        # Load the database
+        # loading into data set 
         self._build_knowledge_base()
 
     def _build_knowledge_base(self):
@@ -55,7 +55,7 @@ class ForensicExpertSystem:
         if unknown_img is None:
             return None, "Error: Could not read image"
 
-        # Pre-process unknown image
+        # pre processing for unknown image
         gray = cv2.cvtColor(unknown_img, cv2.COLOR_BGR2GRAY)
         kp_u, des_u = self.orb.detectAndCompute(gray, None)
         
@@ -65,10 +65,10 @@ class ForensicExpertSystem:
         best_feature_score = 0
         best_feature_match = None
         
-        best_hist_score = -1.0   # FIX: correlation can be negative
+        best_hist_score = -1.0   
         best_hist_match = None
 
-        # Compare against every original in the database
+        # comparing image with the orginal image database 
         for original_name, data in self.knowledge_base.items():
             
             # --- RULE 1: Feature Matching
@@ -92,7 +92,7 @@ class ForensicExpertSystem:
                     if m.distance < 0.75 * n.distance:
                         good.append(m)
 
-                # If enough good matches, verify geometry using RANSAC
+                # If good matches, verify geometry using RANSAC
                 if len(good) >= 12:
                     src_pts = np.float32([kp_u[m.queryIdx].pt for m in good]).reshape(-1, 1, 2)
                     dst_pts = np.float32([kp_o[m.trainIdx].pt for m in good]).reshape(-1, 1, 2)
@@ -112,42 +112,41 @@ class ForensicExpertSystem:
                 best_hist_score = hist_score
                 best_hist_match = original_name
 
-        # --- FINAL DECISION LOGIC ---
+        # final comparision and result 
         
-        # Rule A: Strong geometric match using inliers (handles crops/rotation reliably)
+        # if geometric match 
         if best_feature_score >= 18:
             return best_feature_match, f"MATCH FOUND: {best_feature_match} | Reasoning: Strong geometric match ({best_feature_score} RANSAC inliers)."
         
-        # Rule B: Fallback to color histogram if features fail (e.g., heavy blur/compression)
+        # if color match 
         elif best_hist_score > 0.98:
             return best_hist_match, f"MATCH FOUND: {best_hist_match} | Reasoning: High color similarity ({best_hist_score:.3f}) fallback."
             
-        # Default: Reject
+        #reject if nothing matchn
         return "REJECTED", f"NO MATCH: Max geometric inliers: {best_feature_score}, Max color correlation: {best_hist_score:.2f}"
         
 def main():
-    # 1. Setup Paths
-    base_dir = os.path.dirname(os.path.abspath(__file__)) # Use the script's directory
+    #setting path
+    base_dir = os.path.dirname(os.path.abspath(__file__)) 
     originals_path = os.path.join(base_dir, "originals")
     
-    # Check if directories exist
+    #if not found 
     if not os.path.exists(originals_path):
         print("Error: Directory structure not found. Please check paths.")
         return
 
-    # 2. Initialize System
     expert = ForensicExpertSystem(originals_path)
 
-    # 3. Define test directories
+    # test directories 
     test_dirs = {
         "Easy Cases": os.path.join(base_dir, "modified_images"),
         "Hard Cases": os.path.join(base_dir, "hard"),
         "Random Cases": os.path.join(base_dir, "random")
     }
 
-    # 4. Run Analysis
+    # testing data 
     for category, path in test_dirs.items():
-        print(f"\n--- Analyzing: {category} ---")
+        print(f"\nAnalyzing: {category} ")
         if not os.path.exists(path):
             print(f"Skipping {category} (folder not found)")
             continue
@@ -158,10 +157,10 @@ def main():
         for img_path in images:
             filename = os.path.basename(img_path)
             
-            # Ask the expert system
+            # checking with system 
             result, reason = expert.analyze_image(img_path)
             
-            # Print output (Tabular style for readability)
+            # print output
             status_icon = "✅" if result != "REJECTED" else "❌"
             
             
