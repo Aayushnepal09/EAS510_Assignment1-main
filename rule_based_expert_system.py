@@ -71,7 +71,7 @@ class ForensicExpertSystem:
         # comparing image with the orginal image database 
         for original_name, data in self.knowledge_base.items():
             
-            # --- RULE 1: Feature Matching
+            # Feature Matching
 
             inliers_count = 0
         
