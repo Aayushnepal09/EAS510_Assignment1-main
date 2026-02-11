@@ -31,8 +31,7 @@ def main():
     # Loading ground truth
     with open (gt_path, "r") as f:
         ground_truth = json.load(f)
-
-    # Init expert system
+        
     expert = ForensicExpertSystem(originals_path)
 
     # saving output fro both result and compae values 
@@ -56,7 +55,7 @@ def main():
             summary["by_category"][cat]["correct"] += 1
             summary["overall"]["correct"] += 1
 
-    # Evaluate every file in ground_truth.json
+    # evaluate every file in ground_truth.json
     for rel_path, expected in ground_truth.items():
 
         # category for folders (hard/modified_images/ random/)

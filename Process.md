@@ -35,22 +35,21 @@ When the system analyzes an image, it follows a checklist (Rules).
 
 #### Rule #1: The Geometry Check (Strongest)
 It tries to match the Keypoints from the unknown image to the original.
-1.  **KNN Match**: For every point in the unknown image, find the 2 closest points in the original.
+1.  **KNN Match**: For every point in the unknown image,    find the 2 closest points in the original.
 2.  **Ratio Test**: Throw away matches that look confusing.
 3.  **RANSAC**: It tries to find a geometric pattern (like a rotation). It counts how many points fit this pattern. These are called **"Inliers"**.
 
-> **Logic**: If `Inliers >= 18`, we are confident it's a match.
+ **Logic**: If `Inliers >= 18`, we are confident it's a match.
 
 #### Rule #2: The Color Check (Fallback)
 If the Geometry Check fails (maybe the image is too blurry), we check the color histogram.
 
-> **Logic**: If `Color Correlation > 0.98` (98% similar), we say it is a match.
+ **Logic**: If `Color Correlation > 0.98` (98% similar), we say it is a match.
 
 #### Rule #3: Rejection
 If neither rule passes, we assume the image is random or unrelated.
 
----
-
+-------------------------------------------------------
 ## Part 2: The Validation (`Validate_results.py`)
 
 This script tests how good the system is.
