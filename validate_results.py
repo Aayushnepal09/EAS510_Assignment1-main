@@ -1,7 +1,7 @@
 import os
 import json
 from datetime import datetime
-from rule_based_expert_system import ForensicExpertSystem
+from expert_system import ForensicSystem
 
 
 def normalize_pred(raw_result):
@@ -32,7 +32,7 @@ def main():
     with open (gt_path, "r") as f:
         ground_truth = json.load(f)
         
-    expert = ForensicExpertSystem(originals_path)
+    expert = ForensicSystem(originals_path)
 
     # saving output fro both result and compae values 
     out_predictions_path = os.path.join(base_dir, "predictions.json")
