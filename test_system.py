@@ -30,12 +30,10 @@ def run_test(detective, folder_path, output_file, use_v2=False):
             match_str = match if match == "REJECTED" else f"MATCH to {match}"
             f.write(f"Final Score: {score}/{total_possible} -> {match_str}\n\n")
             
-            # Simple accuracy check for console output (optional but helpful)
-            # Assuming ground truth based on filename as per README
+            # Simple accuracy check for console output
             if "random" not in folder_path:
                 total += 1
-                # modified_03... -> original_03.jpg
-                expected = filename.split('_')[1] # e.g. "03"
+                expected = filename.split('_')[1]
                 if match != "REJECTED" and expected in match:
                     correct += 1
             elif match == "REJECTED":
@@ -52,9 +50,9 @@ def main():
     detective.register_targets("originals")
     
     # Phase 1: Easy + Random
-    print("Running Phase 1 (Easy Cases)...")
+    print("Running Phase 1 Easy")
     acc_easy = run_test(detective, "modified_images", "results_v1_easy.txt", use_v2=False)
-    print("Running Phase 1 (Random Cases)...")
+    print("Running Phase 1 Random")
     acc_random = run_test(detective, "random", "results_v1_random.txt", use_v2=False)
     
     # Merge for results_v1.txt
@@ -63,16 +61,16 @@ def main():
             with open(f, "r") as infile:
                 outfile.write(infile.read())
     
-    # Clean up temp files
+    # Temofile remove
     os.remove("results_v1_easy.txt")
     os.remove("results_v1_random.txt")
 
     # Phase 1: Hard
-    print("Running Phase 1 (Hard Cases)...")
+    print("Running Phase 1 Hard")
     run_test(detective, "hard", "results_v1_hard.txt", use_v2=False)
     
     # Phase 2: All
-    print("Running Phase 2 (All Cases)...")
+    print("Running Phase 2 All")
     run_test(detective, "modified_images", "results_v2_easy.txt", use_v2=True)
     run_test(detective, "hard", "results_v2_hard.txt", use_v2=True)
     run_test(detective, "random", "results_v2_random.txt", use_v2=True)
@@ -82,7 +80,7 @@ def main():
             with open(f, "r") as infile:
                 outfile.write(infile.read())
 
-    # Clean up temp files
+    # Temofile remove
     os.remove("results_v2_easy.txt")
     os.remove("results_v2_hard.txt")
     os.remove("results_v2_random.txt")
