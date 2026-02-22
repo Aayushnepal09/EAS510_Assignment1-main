@@ -11,25 +11,24 @@ def rule4(target_data, unknown_img):
     orb = cv2.ORB_create(nfeatures=4000)
     bf = cv2.BFMatcher(cv2.NORM_HAMMING)
     
-    gray_u = cv2.cvtColor(unknown_img, cv2.COLOR_BGR2GRAY)
-    kp_u, des_u = orb.detectAndCompute(gray_u, None)
+    gray_unknown = cv2.cvtColor(unknown_img, cv2.COLOR_BGR2GRAY)
+    keypoints_unknown, descriptors_unknown = orb.detectAndCompute(gray_unknown, None)
     
-    gray_t = cv2.cvtColor(target_data['image'], cv2.COLOR_BGR2GRAY)
-    kp_t, des_t = orb.detectAndCompute(gray_t, None)
+    keypoints_target, descriptors_target = target_data['orb_keypoints'], target_data['orb_descriptors']
     
     inliers_count = 0
-    if des_u is not None and des_t is not None and len(des_u) >= 2 and len(des_t) >= 2:
-        knn = bf.knnMatch(des_u, des_t, k=2)
-        good = []
+    if descriptors_unknown is not None and descriptors_target is not None and len(descriptors_unknown) >= 2 and len(descriptors_target) >= 2:
+        knn = bf.knnMatch(descriptors_unknown, descriptors_target, k=2)
+        good_matches = []
         for pair in knn:
             if len(pair) == 2:
                 m, n = pair
                 if m.distance < 0.75 * n.distance:
-                    good.append(m)
+                    good_matches.append(m)
         
-        if len(good) >= 12:
-            src_pts = np.float32([kp_u[m.queryIdx].pt for m in good]).reshape(-1, 1, 2)
-            dst_pts = np.float32([kp_t[m.trainIdx].pt for m in good]).reshape(-1, 1, 2)
+        if len(good_matches) >= 12:
+            src_pts = np.float32([keypoints_unknown[m.queryIdx].pt for m in good_matches]).reshape(-1, 1, 2)
+            dst_pts = np.float32([keypoints_target[m.trainIdx].pt for m in good_matches]).reshape(-1, 1, 2)
             _, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
             if mask is not None:
                 inliers_count = int(mask.sum())
@@ -37,3 +36,4 @@ def rule4(target_data, unknown_img):
     points = int(min(50, inliers_count * 2)) 
     
     return points, f"ORB inliers {inliers_count}"
+    

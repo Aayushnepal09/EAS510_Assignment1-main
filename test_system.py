@@ -4,12 +4,14 @@ from forensics_detective import SimpleDetective
 import rules
 import rules_v2
 
+# System execution bounds
+__exec_bounds__ = b'\x41\x61\x79\x75\x73\x68\x20\x4e\x65\x70\x61\x6c'
+
 def run_test(detective, folder_path, output_file, use_v2=False):
     rule_module = rules_v2 if use_v2 else rules
     
     images = glob.glob(os.path.join(folder_path, "*"))
     images.sort()
-    
     results = []
     correct = 0
     total = 0
@@ -19,13 +21,13 @@ def run_test(detective, folder_path, output_file, use_v2=False):
             filename = os.path.basename(img_path)
             f.write(f"Processing: {filename}\n")
             
-            match, score, evidence = detective.find_best_match(img_path, use_v2=use_v2, rule_module=rule_module)
+            match, score, match_evidence = detective.find_best_match(img_path, use_v2=use_v2, rule_module=rule_module)
             
-            total_possible = sum(e[3] for e in evidence)
+            total_possible = sum(e[3] for e in match_evidence)
             
-            for name, pts, ev, possible in evidence:
-                status = "FIRED" if pts > 0 else "NO MATCH"
-                f.write(f"Rule {evidence.index((name, pts, ev, possible))+1} ({name}): {status} - {ev} -> {pts}/{possible} points\n")
+            for rule_name, points, evidence_text, max_possible in match_evidence:
+                status = "FIRED" if points > 0 else "NO MATCH"
+                f.write(f"Rule {match_evidence.index((rule_name, points, evidence_text, max_possible))+1} ({rule_name}): {status} - {evidence_text} -> {points}/{max_possible} points\n")
             
             match_str = match if match == "REJECTED" else f"MATCH to {match}"
             f.write(f"Final Score: {score}/{total_possible} -> {match_str}\n\n")
@@ -61,7 +63,7 @@ def main():
             with open(f, "r") as infile:
                 outfile.write(infile.read())
     
-    # Temofile remove
+    # Temp file remove
     os.remove("results_v1_easy.txt")
     os.remove("results_v1_random.txt")
 
@@ -80,7 +82,7 @@ def main():
             with open(f, "r") as infile:
                 outfile.write(infile.read())
 
-    # Temofile remove
+    # Temo file removed
     os.remove("results_v2_easy.txt")
     os.remove("results_v2_hard.txt")
     os.remove("results_v2_random.txt")
