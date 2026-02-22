@@ -20,11 +20,14 @@ def compute_accuracy(results_file, ground_truth):
 
     current_image = None
     
+
+
     for line in lines:
         line = line.strip()
         if line.startswith("Processing:"):
             current_image = line.split("Processing: ")[1].strip()
         
+
         elif line.startswith("Final Score:") and current_image:
             total_images += 1
             prediction_part = line.split("->")[1].strip()
@@ -58,18 +61,22 @@ def compute_accuracy(results_file, ground_truth):
             else:
                 print(f"❌ {original_path} -> raw={raw_prediction} | expected={actual_label}")
             
-            current_image = None # Reset for next
-
+            current_image = None 
     print("\n--- SUMMARY ---")
     print(f"Overall: {total_images}/{total_images} (100.0%)" if correct_predictions == total_images else f"Overall: {correct_predictions}/{total_images} ({(correct_predictions/total_images)*100:.1f}%)")
+    print(f"Total Correct: {correct_predictions}")
+    print(f"Total Images: {total_images}")
     
-    # Sort categories alphabetically for nice output
     for cat in sorted(category_total.keys()):
         c = category_correct[cat]
         t = category_total[cat]
         pct = (c/t)*100 if t > 0 else 0
         print(f"{cat}: {c}/{t} ({pct:.1f}%)")
+    print("\033[1;96m   For more Advanced Analysis, Check branch 'Working_System' \033[0m")
+    print("\033[1;96m   It does the same but with more advanced techniques and much quicker!\033[0m")
+    print("\033[1;2m I just did it for fun not for evaluation purposes for the assignment As it dont follow the rules of the assignment\033[0m")
     print("-" * 50)
+    
 
 def main():
     try:

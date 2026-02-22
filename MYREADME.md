@@ -54,8 +54,8 @@ Inorder to do so there are two steps:
 
 ### First: ORB (Oriented FAST and Rotated BRIEF)
 
-This methord is like taking a pen and putting a dot on every sharp corner or edge in a photo. These dots are called "Keypoints". this helps us to identiy fy all the shapes even if its modified 
-For example even if you rotate the building the edge of the building is still present there and as its already noted by the system it can be easyly identiify 
+This methord is like taking a pen and putting a dot on every sharp corner or edge in a photo. These dots are called "Keypoints". this helps us to identiy all the shapes even if it gets modified 
+For example even if you rotate the building the edge of the building is still present there and as its already noted by the system it can be easily identiify 
 
 **The Code**:
 ```python

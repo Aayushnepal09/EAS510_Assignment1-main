@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.vscode
 
 # Virtual Environment
 .venv/
@@ -16,7 +17,3 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Results
-results_v1.txt
-results_v1_hard.txt
-results_v2.txt
