@@ -72,9 +72,6 @@ def compute_accuracy(results_file, ground_truth):
         t = category_total[cat]
         pct = (c/t)*100 if t > 0 else 0
         print(f"{cat}: {c}/{t} ({pct:.1f}%)")
-    print("\033[1;96m   For more Advanced Analysis, Check branch 'Working_System' \033[0m")
-    print("\033[1;96m   It does the same but with more advanced techniques and much quicker!\033[0m")
-    print("\033[1;2m I just did it for fun not for evaluation purposes for the assignment As it dont follow the rules of the assignment\033[0m")
     print("-" * 50)
     
 

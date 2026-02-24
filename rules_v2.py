@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from rules import *
 
-# Existing Rules 1-3 are imported from rules.py via *
+# Existing Rules 1-3 are imported from rules.py
 
 def rule4(target_data, unknown_img):
     """

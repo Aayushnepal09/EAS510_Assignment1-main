@@ -45,7 +45,7 @@ def rule2(target_data, unknown_img):
 def rule3(target_data, unknown_img):
     """
     Rule 3: Template Matching
-    Optimized: Resize images to a smaller scale for faster processing.
+    Resize images to a smaller scale for faster processing.
     """
     MAX_DIM = 400
     
